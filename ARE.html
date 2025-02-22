@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ashish radio electronics</title>
+        <link rel="stylesheet" href="ARE.CSS">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+         <!--Menu bar-->
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="./image/logo1.jpg" width="170px" height="150px" 
+              class="logo">
+          <ul class="menuItems">
+              <li><a href="#" data-item="">Home</a></li>
+              <li><a href="#product" data-item="#">Products</a></li>
+              <li><a href="#mot" data-item="#">Meet our team</a></li>
+              <li><a href="#about" data-item="#">About Us</a></li>
+              <li><a href="#Contact" data-item="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h3 style="color: #00ffff;">Ashish Radio Electronics<span style="color: #ffffff98;"><br/>  From Sankheda</span></h3>
+          <p>Shop the Latest Home Appliances – Reliable, Affordable, and Energy-Efficient!</p>
+          <img class="mypic" src="./image/home1.png" width="590px" height="450px">
+        </div>
+        </div>
+      </div>
+      
+      <!--Products-->
+      <section id="product">
+      <div class="container">
+        <h2 style="margin-top: 50px;
+        margin-bottom: 100px;
+        text-decoration: underline;
+        color: white;">Products</h2>
+        <div class="product-grid" id="productGrid">
+            <div class="product">
+                <img src="./image/washing-machine.png" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+            </div>
+            <div class="product">
+                <img src="./image/tv.png" alt="Refrigerator">
+                <h3>Television</h3>
+            </div>
+            <div class="product">
+              <img src="./image/fridge.png" alt="Refrigerator">
+              <h3>Refrigerator</h3>
+          </div>
+          <div class="product">
+            <img src="./image/flour-mill.png" alt="Refrigerator">
+            <h3>Atta Chakki</h3>
+        </div>
+        <div class="product">
+          <img src="./image/smartphone.png" alt="Refrigerator">
+          <h3>Mobile</h3>
+      </div>
+      <div class="product">
+        <img src="./image/iron.png" alt="Refrigerator">
+        <h3>Iron</h3>
+    </div>
+    <div class="product">
+      <img src="./image/water-filter.png" alt="Refrigerator">
+      <h3>Water Purifier</h3>
+  </div>
+        <div class="product">
+          <img src="./image/air-conditioner.png" alt="Refrigerator">
+          <h3>Air conditioner</h3>
+      </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice"></p>
+        </div>
+    </div>
+      <!--mot-->
+     <section id="mot">
+        <div class="section">
+          <h2 style="margin-top: 130px;
+          text-decoration: underline;
+          color: white;">Meet our team</h2>
+          <div class="team-container">
+            <div class="team-card">
+                <img src="./image/m1.jpg" alt="Team Member">
+                <div class="name">Janeshkumar Pandya</div>
+                <div class="role">Owner</div>
+            </div>
+            <div class="team-card">
+                <img src="./image/m1.jpg" alt="Team Member">
+                <div class="name">ManojKumar Pandya</div>
+            </div>
+            <div class="team-card">
+                <img src="./image/m1.jpg" alt="Team Member">
+                <div class="name">Vinodbhai Bhatt</div>
+            </div>
+        </div>
+        </div>
+    
+  <!--About us-->
+  <section id="about">
+    <div>
+      <h2 style="margin-top: 100px;
+    text-decoration: underline;
+    color: white;">About Us</h2>
+      <div class="about">
+      <div class="container">
+        <img src="./image/about1.jpg">
+        <h3 style="color: #00ffff;"><big>Welcome to Ashish radio electronics</big></h3><br/>
+        <p>
+           Your one-stop destination for high-quality home appliances that bring comfort, convenience, and innovation to your home. With years of experience in the industry, we take pride in offering a wide range of products, including refrigerators, washing machines, air conditioners, kitchen appliances, and more—all from the most trusted brands.
+
+Our mission is to provide top-notch appliances at competitive prices, backed by excellent customer service. Whether you're upgrading your home or searching for the latest technology, our knowledgeable team is here to help you make the right choice.
+
+Visit us today and experience the perfect blend of quality, reliability, and affordability!
+        </p>
+      </div>
+    </div>
+  </section>
+      <!--Contact us-->
+   <section id="Contact">
+        <div class="section">
+          <h2 style="margin-top: 130px;
+          text-decoration: underline;
+          color: white;">Contact US</h2>
+          <div class="contact-container">
+            
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" >
+                <span class="error" id="nameError"></span><br/>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <span class="error" id="emailError"></span><br/>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Enter your message" rows="4"></textarea>
+                <span class="error" id="messageError"></span>
+                
+                <button type="button" onclick="validateForm()">Send Message</button>
+            </form>
+            
+        </div>
+      </div>
+      <!--Footer-->
+      <section id="footer">
+        <div class="container">
+            <h1 style="font-size: 50px;">VISIT SHOP TODAY</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left" style="margin-left: -50px;
+                                            font-size: 20px;">
+                <h1><i class="fa fa-clock-o" ></i>OPENING HOURS</h1>
+                <p><i class="fa fa-clock-o"></i>MONDAY TO SUNDAY : 9AM TO 9PM</p>
+            </div>
+            <div class="footer-right" style="margin-left: -50px;
+                                            font-size: 20px;">
+                <H1 style="margin-right: 20px;">GET IN TOUCH</H1>
+                <p>Near ambaji temple, bajar road, sankheda<i class="fa fa-map-marker"></i></p>
+                <p>pandyajaneshkumar@yahoo.com<i class="fa fa-paper-plane"></i></p>
+                <p>+919825845767<i class="fa fa-phone"></i></p>
+            </div>
+
+        </div>
+    </section>
+    </body>
+</html>
